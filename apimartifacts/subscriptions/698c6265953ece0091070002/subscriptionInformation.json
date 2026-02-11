@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "scope": "/products/unlimited",
+    "allowTracing": false,
+    "ownerId": "/subscriptions/f654ae1e-a7e6-4898-bdf3-f1cce60417ae/resourceGroups/githubrg/providers/Microsoft.ApiManagement/service/apim-ga-dev/users/1",
+    "state": "active"
+  }
+}

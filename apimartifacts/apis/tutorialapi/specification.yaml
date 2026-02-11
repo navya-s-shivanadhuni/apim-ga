@@ -1,0 +1,37 @@
+openapi: 3.0.1
+info:
+  title: TutorialAPI
+  description: ''
+  version: '1.0'
+servers:
+  - url: https://apim-ga-dev.azure-api.net
+paths:
+  /forecast:
+    get:
+      summary: Forecast
+      operationId: forecast
+      parameters:
+        - name: lat
+          in: query
+          schema:
+            type: double
+        - name: lon
+          in: query
+          schema:
+            type: double
+      responses:
+        '200':
+          description: ''
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]
