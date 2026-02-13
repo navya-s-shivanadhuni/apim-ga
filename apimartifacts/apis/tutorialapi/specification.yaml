@@ -9,17 +9,19 @@ paths:
   /forecast:
     get:
       summary: Forecast
-      description: Forecast
+      description: Forecast Development
       operationId: forecast
       parameters:
         - name: latitude
           in: query
+          description: latitude Type
           schema:
             enum:
               - 10
             type: double
         - name: longitude
           in: query
+          description: longitude type
           schema:
             enum:
               - 20

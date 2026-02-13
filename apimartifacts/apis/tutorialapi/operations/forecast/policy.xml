@@ -3,7 +3,7 @@
 		<base />
 		<set-backend-service base-url="https://api.openweathermap.org/data/2.5" />
 		<set-query-parameter name="appid" exists-action="override">
-			<value>Put your API key here</value>
+			<value>API Key</value>
 		</set-query-parameter>
 	</inbound>
 	<backend>
